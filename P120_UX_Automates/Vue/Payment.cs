@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P120_UX_Automates
+namespace P120_UX_Automates.Vue
 {
-    public partial class ParisVisite : Form
+    public partial class Payment : Form
     {
-        public ParisVisite()
+        public Payment()
         {
             InitializeComponent();
         }

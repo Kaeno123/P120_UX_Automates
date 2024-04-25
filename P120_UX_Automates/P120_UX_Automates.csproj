@@ -46,34 +46,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Disneyland.cs">
+    <Compile Include="Controleur\ControlTickets.cs" />
+    <Compile Include="Vue\Disneyland.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Disneyland.Designer.cs">
+    <Compile Include="Vue\Disneyland.Designer.cs">
       <DependentUpon>Disneyland.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aeroport.cs">
+    <Compile Include="Vue\Aeroport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aeroport.Designer.cs">
+    <Compile Include="Vue\Aeroport.Designer.cs">
       <DependentUpon>Aeroport.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParisVisite.cs">
+    <Compile Include="Modele\DataTicket.cs" />
+    <Compile Include="Vue\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ParisVisite.Designer.cs">
+    <Compile Include="Vue\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\TypeOfPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\TypeOfPayment.Designer.cs">
+      <DependentUpon>TypeOfPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Recap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Recap.Designer.cs">
+      <DependentUpon>Recap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\ParisVisite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\ParisVisite.Designer.cs">
       <DependentUpon>ParisVisite.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Vue\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Vue\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Standard.cs">
+    <Compile Include="Vue\Standard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Standard.Designer.cs">
+    <Compile Include="Vue\Standard.Designer.cs">
       <DependentUpon>Standard.cs</DependentUpon>
     </Compile>
     <Compile Include="Langues\ESP.Designer.cs">
@@ -103,10 +123,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Aeroport.resx">
+    <EmbeddedResource Include="Vue\Aeroport.resx">
       <DependentUpon>Aeroport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Vue\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Langues\ESP.resx">
@@ -138,8 +158,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Standard.resx">
+    <EmbeddedResource Include="Vue\ParisVisite.resx">
+      <DependentUpon>ParisVisite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\TypeOfPayment.resx">
+      <DependentUpon>TypeOfPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Recap.resx">
+      <DependentUpon>Recap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Standard.resx">
       <DependentUpon>Standard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Disneyland.resx">
+      <DependentUpon>Disneyland.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -154,10 +189,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controleur\" />
-    <Folder Include="Modèle\" />
-    <Folder Include="Vue\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace P120_UX_Automates
+﻿namespace P120_UX_Automates.Vue
 {
     partial class Menu
     {

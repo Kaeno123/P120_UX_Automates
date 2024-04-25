@@ -1,4 +1,4 @@
-﻿namespace P120_UX_Automates
+﻿namespace P120_UX_Automates.Vue
 {
     partial class Standard
     {
@@ -40,6 +40,7 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnGoNext = new System.Windows.Forms.Button();
             this.btnValid = new System.Windows.Forms.Button();
+            this.lstboxQuantity = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblStandard
@@ -57,13 +58,14 @@
             // 
             this.btnAdult.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAdult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdult.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdult.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.btnAdult.Location = new System.Drawing.Point(110, 124);
             this.btnAdult.Name = "btnAdult";
             this.btnAdult.Size = new System.Drawing.Size(205, 68);
             this.btnAdult.TabIndex = 3;
             this.btnAdult.Text = "Adulte";
             this.btnAdult.UseVisualStyleBackColor = false;
+            this.btnAdult.Click += new System.EventHandler(this.btnAdult_Click);
             // 
             // btnChild
             // 
@@ -76,6 +78,7 @@
             this.btnChild.TabIndex = 4;
             this.btnChild.Text = "Enfant";
             this.btnChild.UseVisualStyleBackColor = false;
+            this.btnChild.Click += new System.EventHandler(this.btnChild_Click);
             // 
             // lbl1_50e
             // 
@@ -164,6 +167,7 @@
             this.btnGoNext.TabIndex = 12;
             this.btnGoNext.Text = "Passer à la suite";
             this.btnGoNext.UseVisualStyleBackColor = false;
+            this.btnGoNext.Click += new System.EventHandler(this.btnGoNext_Click);
             // 
             // btnValid
             // 
@@ -176,6 +180,16 @@
             this.btnValid.TabIndex = 13;
             this.btnValid.Text = "Valider ticket";
             this.btnValid.UseVisualStyleBackColor = false;
+            this.btnValid.Click += new System.EventHandler(this.btnValid_Click);
+            // 
+            // lstboxQuantity
+            // 
+            this.lstboxQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstboxQuantity.ItemHeight = 31;
+            this.lstboxQuantity.Location = new System.Drawing.Point(373, 347);
+            this.lstboxQuantity.Name = "lstboxQuantity";
+            this.lstboxQuantity.Size = new System.Drawing.Size(75, 35);
+            this.lstboxQuantity.TabIndex = 0;
             // 
             // Standard
             // 
@@ -183,6 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(834, 586);
+            this.Controls.Add(this.lstboxQuantity);
             this.Controls.Add(this.btnValid);
             this.Controls.Add(this.btnGoNext);
             this.Controls.Add(this.btnReturn);
@@ -196,7 +211,7 @@
             this.Controls.Add(this.btnAdult);
             this.Controls.Add(this.lblStandard);
             this.Name = "Standard";
-            this.Text = "Form2";
+            this.Text = "Standard";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +231,6 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnGoNext;
         private System.Windows.Forms.Button btnValid;
+        private System.Windows.Forms.ListBox lstboxQuantity;
     }
 }

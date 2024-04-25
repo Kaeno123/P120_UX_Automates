@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 
-namespace P120_UX_Automates
+namespace P120_UX_Automates.Vue
 {
     public partial class Menu : Form
     {
+        Controleur.ControlTickets _controller;
+        public Controleur.ControlTickets Controller { get { return _controller; } set { _controller = value; } }
         ResourceManager language;
         public Menu()
         {
