@@ -13,9 +13,11 @@ namespace P120_UX_Automates.Vue
     public partial class Standard : Form
     {
         Controleur.ControlTickets _controller;
-        string choicePerson = "";
-        List<string> _listTicket = new List<string>();
-        bool _canGoNext = false;
+        Tickets _tickets;
+        string _choicePerson = "";
+        double _price = 0;
+
+        public Controleur.ControlTickets Controller { get { return _controller; } set { _controller = value; } }
         public Standard()
         {
             InitializeComponent();
@@ -26,41 +28,80 @@ namespace P120_UX_Automates.Vue
             }
         }
 
+        /// <summary>
+        /// Retourne au menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
-        {
-            Menu menu = new Menu();
+        { 
             this.Close();
-            menu.Show();
+            _controller.SwitchView("Menu");
         }
 
+        /// <summary>
+        /// Lorsque le client choisi le ticket adulte
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnAdult_Click(object sender, EventArgs e)
         {
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            choicePerson = "Adulte";
+            _choicePerson = "Adulte";
+            _price = 1.50;
         }
 
+        /// <summary>
+        /// Lorsque le client choisi le ticket enfant
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnChild_Click(object sender, EventArgs e)
         {
             btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            choicePerson = "Enfant";
+            _choicePerson = "Enfant";
+            _price = 1;
         }
 
+        /// <summary>
+        /// Valide le choix d'un ticket tout en vérifiant si les conditions sont présentes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnValid_Click(object sender, EventArgs e)
         {
-            _listTicket.Add($"{choicePerson} : {lstboxQuantity.SelectedItem} ticket(s)");
-            Console.WriteLine(_listTicket[_listTicket.Count - 1]);
-            _canGoNext = true;
+            if (_choicePerson == "" || lstboxQuantity.Text == "")//Vérifie si le client a bien séléctionné les éléments nécéssaires
+            {
+                MessageBox.Show("Veuillez séléctionner le type et la quantité !", "Attention");
+            }
+            else
+            {
+                for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
+                {
+                    _tickets = new Tickets(_choicePerson, _price, DateTime.UtcNow);
+                    _controller.AddTicket(_tickets);
+                }
+            }
         }
 
+        /// <summary>
+        /// Mène à la page récapitulative
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGoNext_Click(object sender, EventArgs e)
         {
-            if (_canGoNext is true)
+            if (_controller.VerifiyTicket() is true)//Vérifie si le client a validé au moins un ticket
             {
                 Recap recap = new Recap();
                 this.Close();
                 recap.Show();                
+            }
+            else
+            {
+                MessageBox.Show("Veuillez séléctionner le type et la quantité !", "Attention");
             }
         }
     }

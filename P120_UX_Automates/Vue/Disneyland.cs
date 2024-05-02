@@ -12,9 +12,12 @@ namespace P120_UX_Automates.Vue
 {
     public partial class Disneyland : Form
     {
-        string choicePerson = "";
-        List<string> _listTicket = new List<string>();
-        bool _canGoNext = false;
+        Controleur.ControlTickets _controller;
+        Tickets _tickets;
+        string _choicePerson = "";
+        double _price = 0;
+
+        public Controleur.ControlTickets Controller { get { return _controller; } set { _controller = value; } }
 
         public Disneyland()
         {
@@ -30,37 +33,56 @@ namespace P120_UX_Automates.Vue
         {
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            choicePerson = "Adulte";
+            _choicePerson = "Adulte";
+            _price = 2;
         }
 
         private void btnChild_Click(object sender, EventArgs e)
         {
             btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            choicePerson = "Enfant";
+            _choicePerson = "Enfant";
+            _price = 1.50;
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
             this.Close();
-            menu.Show();
+            _controller.SwitchView("Menu");
         }
 
         private void btnValid_Click(object sender, EventArgs e)
         {
-            _listTicket.Add($"{choicePerson} : {lstboxQuantity.SelectedItem} ticket(s). A partir du {dateTime.Text}.");
-            Console.WriteLine(_listTicket[_listTicket.Count - 1]);
-            _canGoNext = true;
+            if (_choicePerson == "" || lstboxQuantity.Text == "")//Vérifie si le client a bien séléctionné les éléments nécéssaires
+            {
+                MessageBox.Show("Veuillez séléctionner le type et la quantité !", "Attention");
+            }
+            else
+            {
+                for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
+                {
+                    _tickets = new Tickets(_choicePerson, _price, dateTime);
+                    _controller.AddTicket(_tickets);
+                }
+            }
         }
 
+        /// <summary>
+        /// Mène à la page récapitulative
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGoNext_Click(object sender, EventArgs e)
         {
-            if (_canGoNext is true)
+            if (_controller.VerifiyTicket() is true)//Vérifie si le client a validé au moins un ticket
             {
                 Recap recap = new Recap();
                 this.Close();
                 recap.Show();
+            }
+            else
+            {
+                MessageBox.Show("Veuillez séléctionner le type, la quantité, et la date de commencement !", "Attention");
             }
         }
     }

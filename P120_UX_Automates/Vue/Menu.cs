@@ -31,7 +31,7 @@ namespace P120_UX_Automates.Vue
             language = new ResourceManager(typeof(Langues.FR));
             UpdateLang(language);
         }
-            
+        
         private void btnEnglish_Click(object sender, EventArgs e)
         {
             foreach (Button languages in pnlLanguages.Controls)
@@ -87,34 +87,31 @@ namespace P120_UX_Automates.Vue
                     c.Text = rManager.GetString(c.Name);
                 }
             }
+            _controller.UpdateLang(rManager);
         }
 
         private void btnStandard_Click(object sender, EventArgs e)
         {
-            Standard standard = new Standard();
             this.Hide();
-            standard.Show();
+            _controller.SwitchView("Standard");
         }
 
         private void btnDisneyland_Click(object sender, EventArgs e)
         {
-            Disneyland disneyland = new Disneyland();
             this.Hide();
-            disneyland.Show();
+            _controller.SwitchView("Disney");
         }
 
         private void btnParisVisite_Click(object sender, EventArgs e)
         {
-            ParisVisite parisVisite = new ParisVisite();
             this.Hide();
-            parisVisite.Show();
+            _controller.SwitchView("Paris");
         }
 
         private void btnAeroport_Click(object sender, EventArgs e)
         {
-            Aeroport aeroport = new Aeroport();
             this.Hide();
-            aeroport.Show();
+            _controller.SwitchView("Aeroport");
         }
     }
 }

@@ -63,7 +63,7 @@
             this.btnValid.Name = "btnValid";
             this.btnValid.Size = new System.Drawing.Size(235, 68);
             this.btnValid.TabIndex = 26;
-            this.btnValid.Text = "Valider ticket";
+            this.btnValid.Text = "Valider tickets";
             this.btnValid.UseVisualStyleBackColor = false;
             this.btnValid.Click += new System.EventHandler(this.btnValid_Click);
             // 
@@ -76,7 +76,7 @@
             this.btnGoNext.Name = "btnGoNext";
             this.btnGoNext.Size = new System.Drawing.Size(243, 68);
             this.btnGoNext.TabIndex = 25;
-            this.btnGoNext.Text = "Passer à la suite";
+            this.btnGoNext.Text = "Paiement";
             this.btnGoNext.UseVisualStyleBackColor = false;
             this.btnGoNext.Click += new System.EventHandler(this.btnGoNext_Click);
             // 

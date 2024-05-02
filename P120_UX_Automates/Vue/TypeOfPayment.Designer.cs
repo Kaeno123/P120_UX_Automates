@@ -66,9 +66,9 @@
             this.lbl_Cash.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_Cash.Location = new System.Drawing.Point(354, 172);
             this.lbl_Cash.Name = "lbl_Cash";
-            this.lbl_Cash.Size = new System.Drawing.Size(267, 24);
+            this.lbl_Cash.Size = new System.Drawing.Size(273, 24);
             this.lbl_Cash.TabIndex = 31;
-            this.lbl_Cash.Text = "050€, 1€, 2€, 5€, 10€ 20€";
+            this.lbl_Cash.Text = "050€, 1€, 2€, 5€, 10€, 20€";
             // 
             // btnCreditCard
             // 
