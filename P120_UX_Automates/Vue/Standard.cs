@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace P120_UX_Automates.Vue
     public partial class Standard : Form
     {
         Controleur.ControlTickets _controller;
+        ResourceManager language;
         Tickets _tickets;
         string _choicePerson = "";
         double _price = 0;
@@ -35,7 +37,7 @@ namespace P120_UX_Automates.Vue
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         { 
-            this.Close();
+            this.Hide();
             _controller.SwitchView("Menu");
         }
 
@@ -65,6 +67,21 @@ namespace P120_UX_Automates.Vue
             _price = 1;
         }
 
+        public string WhichType()
+        {
+            string choicePerson = "";
+
+            if (btnAdult.Font.Underline is true)
+            {
+                choicePerson = btnAdult.Text;
+            }
+            else if (btnChild.Font.Underline is true)
+            {
+                choicePerson = btnChild.Text;
+            }
+            return choicePerson;
+        }
+
         /// <summary>
         /// Valide le choix d'un ticket tout en vérifiant si les conditions sont présentes
         /// </summary>
@@ -78,10 +95,27 @@ namespace P120_UX_Automates.Vue
             }
             else
             {
-                for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
+                _tickets = new Tickets(WhichType(), _price, DateTime.UtcNow);
+                _controller.AddTicket(_tickets);
+                _tickets.Number = Convert.ToInt16(lstboxQuantity.Text);
+
+                /*for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
                 {
                     _tickets = new Tickets(_choicePerson, _price, DateTime.UtcNow);
                     _controller.AddTicket(_tickets);
+                }*/
+            }
+        }
+
+        public void UpdateLang(ResourceManager RMANAGER)
+        {
+            ResourceManager rManager = RMANAGER;
+
+            foreach (Control c in Controls)
+            {
+                if (rManager.GetString(c.Name) != null)
+                {
+                    c.Text = rManager.GetString(c.Name);
                 }
             }
         }
@@ -94,10 +128,9 @@ namespace P120_UX_Automates.Vue
         private void btnGoNext_Click(object sender, EventArgs e)
         {
             if (_controller.VerifiyTicket() is true)//Vérifie si le client a validé au moins un ticket
-            {
-                Recap recap = new Recap();
-                this.Close();
-                recap.Show();                
+            {                
+                this.Hide();
+                _controller.SwitchView("Recap");
             }
             else
             {

@@ -1,0 +1,436 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\controleur\\controltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:controleur\\controltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\recap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\recap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\recap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\recap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\standard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\standard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\modele\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:modele\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\parisvisite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\parisvisite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\disneyland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\disneyland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\aeroport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\aeroport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\typeofpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\typeofpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\modele\\dataticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:modele\\dataticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\typeofpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\typeofpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\aeroport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\aeroport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\parisvisite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\parisvisite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\vue\\standard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\standard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\disneyland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\disneyland.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\vue\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:vue\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\langues\\esp.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:langues\\esp.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\langues\\ita.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:langues\\ita.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\langues\\de.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:langues\\de.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\langues\\en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:langues\\en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|d:\\module 120 - ux ui\\projet\\p120_ux_automates\\langues\\fr.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{C35EB2DB-FF97-409D-B189-DDE05E30F915}|P120_UX_Automates.csproj|solutionrelative:langues\\fr.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Payment.cs",
+              "RelativeDocumentMoniker": "Vue\\Payment.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Payment.cs",
+              "RelativeToolTip": "Vue\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:35:58.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ParisVisite.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\ParisVisite.cs",
+              "RelativeDocumentMoniker": "Vue\\ParisVisite.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\ParisVisite.cs [Design]",
+              "RelativeToolTip": "Vue\\ParisVisite.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:04:06.707Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Aeroport.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Aeroport.cs",
+              "RelativeDocumentMoniker": "Vue\\Aeroport.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Aeroport.cs [Design]",
+              "RelativeToolTip": "Vue\\Aeroport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:01:48.503Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ESP.resx",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\ESP.resx",
+              "RelativeDocumentMoniker": "Langues\\ESP.resx",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\ESP.resx",
+              "RelativeToolTip": "Langues\\ESP.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-16T11:56:58.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITA.resx",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\ITA.resx",
+              "RelativeDocumentMoniker": "Langues\\ITA.resx",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\ITA.resx",
+              "RelativeToolTip": "Langues\\ITA.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-16T11:55:47.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DE.resx",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\DE.resx",
+              "RelativeDocumentMoniker": "Langues\\DE.resx",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\DE.resx",
+              "RelativeToolTip": "Langues\\DE.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-16T11:53:16.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EN.resx",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\EN.resx",
+              "RelativeDocumentMoniker": "Langues\\EN.resx",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\EN.resx",
+              "RelativeToolTip": "Langues\\EN.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-16T11:51:45.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FR.resx",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\FR.resx",
+              "RelativeDocumentMoniker": "Langues\\FR.resx",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Langues\\FR.resx",
+              "RelativeToolTip": "Langues\\FR.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-16T11:48:31.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Standard.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Standard.cs",
+              "RelativeDocumentMoniker": "Vue\\Standard.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Standard.cs [Design]",
+              "RelativeToolTip": "Vue\\Standard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:29:10.788Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Payment.cs",
+              "RelativeDocumentMoniker": "Vue\\Payment.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Payment.cs [Design]",
+              "RelativeToolTip": "Vue\\Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:44:14.385Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Standard.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Standard.cs",
+              "RelativeDocumentMoniker": "Vue\\Standard.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Standard.cs",
+              "RelativeToolTip": "Vue\\Standard.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAqwGUAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:29:16.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tickets.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Modele\\Tickets.cs",
+              "RelativeDocumentMoniker": "Modele\\Tickets.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Modele\\Tickets.cs",
+              "RelativeToolTip": "Modele\\Tickets.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAzwBYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:28:21.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Disneyland.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Disneyland.cs",
+              "RelativeDocumentMoniker": "Vue\\Disneyland.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Disneyland.cs [Design]",
+              "RelativeToolTip": "Vue\\Disneyland.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:26:45.414Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Disneyland.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Disneyland.cs",
+              "RelativeDocumentMoniker": "Vue\\Disneyland.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Disneyland.cs",
+              "RelativeToolTip": "Vue\\Disneyland.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAiwE4AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:18:00.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Aeroport.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Aeroport.cs",
+              "RelativeDocumentMoniker": "Vue\\Aeroport.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Aeroport.cs",
+              "RelativeToolTip": "Vue\\Aeroport.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAWwEYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:18:28.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ParisVisite.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\ParisVisite.cs",
+              "RelativeDocumentMoniker": "Vue\\ParisVisite.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\ParisVisite.cs",
+              "RelativeToolTip": "Vue\\ParisVisite.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwEwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:18:21.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Menu.cs",
+              "RelativeDocumentMoniker": "Vue\\Menu.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Menu.cs",
+              "RelativeToolTip": "Vue\\Menu.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAwBAAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControlTickets.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Controleur\\ControlTickets.cs",
+              "RelativeDocumentMoniker": "Controleur\\ControlTickets.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Controleur\\ControlTickets.cs",
+              "RelativeToolTip": "Controleur\\ControlTickets.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAArwIQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCMAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Recap.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Recap.cs",
+              "RelativeDocumentMoniker": "Vue\\Recap.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Recap.cs [Design]",
+              "RelativeToolTip": "Vue\\Recap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:38:01.459Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Menu.cs",
+              "RelativeDocumentMoniker": "Vue\\Menu.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Menu.cs [Design]",
+              "RelativeToolTip": "Vue\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:48:35.813Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataTicket.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Modele\\DataTicket.cs",
+              "RelativeDocumentMoniker": "Modele\\DataTicket.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Modele\\DataTicket.cs",
+              "RelativeToolTip": "Modele\\DataTicket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TypeOfPayment.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\TypeOfPayment.cs",
+              "RelativeDocumentMoniker": "Vue\\TypeOfPayment.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\TypeOfPayment.cs",
+              "RelativeToolTip": "Vue\\TypeOfPayment.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Recap.cs",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Recap.cs",
+              "RelativeDocumentMoniker": "Vue\\Recap.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\Recap.cs",
+              "RelativeToolTip": "Vue\\Recap.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TypeOfPayment.cs [Design]",
+              "DocumentMoniker": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\TypeOfPayment.cs",
+              "RelativeDocumentMoniker": "Vue\\TypeOfPayment.cs",
+              "ToolTip": "D:\\Module 120 - UX UI\\Projet\\P120_UX_Automates\\Vue\\TypeOfPayment.cs [Design]",
+              "RelativeToolTip": "Vue\\TypeOfPayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:45.109Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

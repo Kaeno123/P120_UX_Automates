@@ -56,25 +56,25 @@
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDate.Location = new System.Drawing.Point(238, 388);
+            this.lblDate.Location = new System.Drawing.Point(176, 388);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(78, 31);
+            this.lblDate.Size = new System.Drawing.Size(140, 31);
             this.lblDate.TabIndex = 43;
             this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblParis
             // 
-            this.lblParis.AutoSize = true;
             this.lblParis.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParis.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblParis.Location = new System.Drawing.Point(283, 27);
+            this.lblParis.Location = new System.Drawing.Point(253, 27);
             this.lblParis.Name = "lblParis";
-            this.lblParis.Size = new System.Drawing.Size(305, 55);
+            this.lblParis.Size = new System.Drawing.Size(363, 55);
             this.lblParis.TabIndex = 42;
             this.lblParis.Text = "Paris Visite";
+            this.lblParis.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lstboxQuantity
             // 
@@ -90,9 +90,9 @@
             this.btnValid.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnValid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValid.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValid.Location = new System.Drawing.Point(206, 493);
+            this.btnValid.Location = new System.Drawing.Point(206, 481);
             this.btnValid.Name = "btnValid";
-            this.btnValid.Size = new System.Drawing.Size(235, 68);
+            this.btnValid.Size = new System.Drawing.Size(235, 80);
             this.btnValid.TabIndex = 41;
             this.btnValid.Text = "Valider tickets";
             this.btnValid.UseVisualStyleBackColor = false;
@@ -103,9 +103,9 @@
             this.btnGoNext.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGoNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGoNext.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoNext.Location = new System.Drawing.Point(516, 493);
+            this.btnGoNext.Location = new System.Drawing.Point(525, 481);
             this.btnGoNext.Name = "btnGoNext";
-            this.btnGoNext.Size = new System.Drawing.Size(243, 68);
+            this.btnGoNext.Size = new System.Drawing.Size(243, 80);
             this.btnGoNext.TabIndex = 40;
             this.btnGoNext.Text = "Paiement";
             this.btnGoNext.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(26, 493);
+            this.btnReturn.Location = new System.Drawing.Point(26, 481);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(91, 68);
+            this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 39;
             this.btnReturn.Text = "<-";
             this.btnReturn.UseVisualStyleBackColor = false;
@@ -126,14 +126,14 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.AutoSize = true;
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(180, 324);
+            this.lblQuantity.Location = new System.Drawing.Point(170, 324);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(136, 31);
+            this.lblQuantity.Size = new System.Drawing.Size(146, 31);
             this.lblQuantity.TabIndex = 38;
             this.lblQuantity.Text = "Quantité";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel1
             // 

@@ -66,9 +66,9 @@
             this.lbl_Cash.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_Cash.Location = new System.Drawing.Point(354, 172);
             this.lbl_Cash.Name = "lbl_Cash";
-            this.lbl_Cash.Size = new System.Drawing.Size(273, 24);
+            this.lbl_Cash.Size = new System.Drawing.Size(299, 24);
             this.lbl_Cash.TabIndex = 31;
-            this.lbl_Cash.Text = "050€, 1€, 2€, 5€, 10€, 20€";
+            this.lbl_Cash.Text = "0,50€   1€   2€   5€   10€   20€";
             // 
             // btnCreditCard
             // 
@@ -92,13 +92,12 @@
             this.btnCash.Name = "btnCash";
             this.btnCash.Size = new System.Drawing.Size(205, 84);
             this.btnCash.TabIndex = 29;
-            this.btnCash.Text = "Cash";
+            this.btnCash.Text = "Argent liquide";
             this.btnCash.UseVisualStyleBackColor = false;
             this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // lblTypeOfPay
             // 
-            this.lblTypeOfPay.AutoSize = true;
             this.lblTypeOfPay.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTypeOfPay.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTypeOfPay.Location = new System.Drawing.Point(170, 36);
@@ -106,6 +105,7 @@
             this.lblTypeOfPay.Size = new System.Drawing.Size(511, 55);
             this.lblTypeOfPay.TabIndex = 28;
             this.lblTypeOfPay.Text = "Moyens de paiement";
+            this.lblTypeOfPay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnGooglePay
             // 

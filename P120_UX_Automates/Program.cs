@@ -19,16 +19,21 @@ namespace P120_UX_Automates
 
             //Création de la vue
             Vue.Menu menu = new Vue.Menu();
+
             Vue.Standard standard = new Vue.Standard();
             Vue.Disneyland disneyland = new Vue.Disneyland();
             Vue.ParisVisite paris = new Vue.ParisVisite();
             Vue.Aeroport aeroport = new Vue.Aeroport();
 
+            Vue.Recap recap = new Vue.Recap();
+            Vue.TypeOfPayment typeOfPayment = new Vue.TypeOfPayment();
+            Vue.Payment payment = new Vue.Payment();
+
             //Création du modèle
             Modele.DataTicket DataTicket = new Modele.DataTicket();
 
             //Création du contrôleur
-            Controleur.ControlTickets controlTickets = new Controleur.ControlTickets(menu, standard, disneyland, paris, aeroport, DataTicket);
+            Controleur.ControlTickets controlTickets = new Controleur.ControlTickets(menu, standard, disneyland, paris, aeroport, DataTicket, recap, typeOfPayment, payment);
 
 
             Application.Run(menu);

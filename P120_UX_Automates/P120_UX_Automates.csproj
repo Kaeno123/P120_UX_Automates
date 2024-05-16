@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tickets.cs" />
+    <Compile Include="Modele\Tickets.cs" />
     <Compile Include="Controleur\ControlTickets.cs" />
     <Compile Include="Vue\Disneyland.cs">
       <SubType>Form</SubType>

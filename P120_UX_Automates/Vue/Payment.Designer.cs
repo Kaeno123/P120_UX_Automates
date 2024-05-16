@@ -30,19 +30,19 @@
         {
             this.lblResumeCommand = new System.Windows.Forms.Label();
             this.lblProced = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.lbl_recap = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblResumeCommand
             // 
-            this.lblResumeCommand.AutoSize = true;
             this.lblResumeCommand.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResumeCommand.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblResumeCommand.Location = new System.Drawing.Point(177, 48);
+            this.lblResumeCommand.Location = new System.Drawing.Point(171, 30);
             this.lblResumeCommand.Name = "lblResumeCommand";
             this.lblResumeCommand.Size = new System.Drawing.Size(486, 55);
             this.lblResumeCommand.TabIndex = 29;
             this.lblResumeCommand.Text = "Résumé commande";
+            this.lblResumeCommand.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblProced
             // 
@@ -55,16 +55,14 @@
             this.lblProced.TabIndex = 30;
             this.lblProced.Text = "Procédez au paiement !";
             // 
-            // lblTotal
+            // lbl_recap
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblTotal.Location = new System.Drawing.Point(490, 404);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(78, 24);
-            this.lblTotal.TabIndex = 34;
-            this.lblTotal.Text = "Totale";
+            this.lbl_recap.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_recap.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbl_recap.Location = new System.Drawing.Point(79, 113);
+            this.lbl_recap.Name = "lbl_recap";
+            this.lbl_recap.Size = new System.Drawing.Size(673, 338);
+            this.lbl_recap.TabIndex = 65;
             // 
             // Payment
             // 
@@ -72,7 +70,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(830, 586);
-            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lbl_recap);
             this.Controls.Add(this.lblProced);
             this.Controls.Add(this.lblResumeCommand);
             this.Name = "Payment";
@@ -86,6 +84,6 @@
 
         private System.Windows.Forms.Label lblResumeCommand;
         private System.Windows.Forms.Label lblProced;
-        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lbl_recap;
     }
 }

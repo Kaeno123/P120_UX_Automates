@@ -117,8 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnAdult" xml:space="preserve">
+    <value>Adulto</value>
+  </data>
   <data name="btnAeroport" xml:space="preserve">
     <value>Aeropuerto</value>
+  </data>
+  <data name="btnCash" xml:space="preserve">
+    <value>Efectivo</value>
+  </data>
+  <data name="btnChild" xml:space="preserve">
+    <value>Ninõ</value>
+  </data>
+  <data name="btnCreditCard" xml:space="preserve">
+    <value>Tarjeta de crédito</value>
+  </data>
+  <data name="btnGoNext" xml:space="preserve">
+    <value>Pago</value>
+  </data>
+  <data name="btnNo" xml:space="preserve">
+    <value>No</value>
   </data>
   <data name="btnParisVisite" xml:space="preserve">
     <value>Visita París</value>
@@ -126,10 +144,58 @@
   <data name="btnStandard" xml:space="preserve">
     <value>Estándar</value>
   </data>
+  <data name="btnValid" xml:space="preserve">
+    <value>Validar boletos</value>
+  </data>
+  <data name="btnYes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
   <data name="lbl1a5Jours" xml:space="preserve">
     <value>De 1 a 5 días - Adulto o niño</value>
   </data>
+  <data name="lblAeroport" xml:space="preserve">
+    <value>Aeropuerto</value>
+  </data>
+  <data name="lblAgeAdult" xml:space="preserve">
+    <value>25 - 40 años</value>
+  </data>
+  <data name="lblAgeReduct" xml:space="preserve">
+    <value>Niño, estudiante</value>
+  </data>
+  <data name="lblDate" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="lblGooglePay" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
   <data name="lblMetro" xml:space="preserve">
     <value>Metro, Tranvía, Autobús, RER</value>
+  </data>
+  <data name="lblParis" xml:space="preserve">
+    <value>Visita París</value>
+  </data>
+  <data name="lblProced" xml:space="preserve">
+    <value>Proceda al pago</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="lblQuestion" xml:space="preserve">
+    <value>¿Están todos los boletos deseados listados arriba?</value>
+  </data>
+  <data name="lblRecap" xml:space="preserve">
+    <value>Resumen</value>
+  </data>
+  <data name="lblResumeCommand" xml:space="preserve">
+    <value>Resumen del pedido</value>
+  </data>
+  <data name="lblStandard" xml:space="preserve">
+    <value>Estándar</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="lblTypeOfPay" xml:space="preserve">
+    <value>Métodos de pago</value>
   </data>
 </root>

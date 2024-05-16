@@ -29,7 +29,7 @@ namespace P120_UX_Automates.Vue
             }
             btnFrancais.Enabled = false;
             language = new ResourceManager(typeof(Langues.FR));
-            UpdateLang(language);
+            _controller.UpdateLang(language);
         }
         
         private void btnEnglish_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace P120_UX_Automates.Vue
             }
             btnEnglish.Enabled = false;
             language = new ResourceManager(typeof(Langues.EN));
-            UpdateLang(language);
+            _controller.UpdateLang(language);
         }
 
         private void btnDeutsch_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace P120_UX_Automates.Vue
             }
             btnDeutsch.Enabled = false;
             language = new ResourceManager(typeof(Langues.DE));
-            UpdateLang(language);
+            _controller.UpdateLang(language);
         }
 
         private void btnItaliano_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace P120_UX_Automates.Vue
             }
             btnItaliano.Enabled = false;
             language = new ResourceManager(typeof(Langues.ITA));
-            UpdateLang(language);
+            _controller.UpdateLang(language);
         }
 
         private void btnEspanol_Click(object sender, EventArgs e)
@@ -73,10 +73,10 @@ namespace P120_UX_Automates.Vue
             }
             btnEspanol.Enabled = false;
             language = new ResourceManager(typeof(Langues.ESP));
-            UpdateLang(language);
+            _controller.UpdateLang(language);
         }
 
-        private void UpdateLang(ResourceManager RMANAGER)
+        public void UpdateLang(ResourceManager RMANAGER)
         {
             ResourceManager rManager = RMANAGER;
 
@@ -86,8 +86,7 @@ namespace P120_UX_Automates.Vue
                 {
                     c.Text = rManager.GetString(c.Name);
                 }
-            }
-            _controller.UpdateLang(rManager);
+            }           
         }
 
         private void btnStandard_Click(object sender, EventArgs e)

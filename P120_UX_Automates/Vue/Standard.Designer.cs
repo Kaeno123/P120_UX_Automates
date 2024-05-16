@@ -59,7 +59,7 @@
             this.btnAdult.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAdult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdult.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.btnAdult.Location = new System.Drawing.Point(110, 124);
+            this.btnAdult.Location = new System.Drawing.Point(110, 111);
             this.btnAdult.Name = "btnAdult";
             this.btnAdult.Size = new System.Drawing.Size(205, 68);
             this.btnAdult.TabIndex = 3;
@@ -72,7 +72,7 @@
             this.btnChild.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnChild.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChild.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChild.Location = new System.Drawing.Point(511, 124);
+            this.btnChild.Location = new System.Drawing.Point(502, 111);
             this.btnChild.Name = "btnChild";
             this.btnChild.Size = new System.Drawing.Size(205, 68);
             this.btnChild.TabIndex = 4;
@@ -134,23 +134,24 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(231, 347);
+            this.lblQuantity.Location = new System.Drawing.Point(192, 347);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(136, 31);
+            this.lblQuantity.Size = new System.Drawing.Size(175, 31);
             this.lblQuantity.TabIndex = 10;
             this.lblQuantity.Text = "Quantité";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnReturn
             // 
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(12, 506);
+            this.btnReturn.Location = new System.Drawing.Point(12, 494);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(91, 68);
+            this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 11;
             this.btnReturn.Text = "<-";
             this.btnReturn.UseVisualStyleBackColor = false;
@@ -161,9 +162,9 @@
             this.btnGoNext.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGoNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGoNext.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoNext.Location = new System.Drawing.Point(502, 506);
+            this.btnGoNext.Location = new System.Drawing.Point(502, 494);
             this.btnGoNext.Name = "btnGoNext";
-            this.btnGoNext.Size = new System.Drawing.Size(243, 68);
+            this.btnGoNext.Size = new System.Drawing.Size(243, 80);
             this.btnGoNext.TabIndex = 12;
             this.btnGoNext.Text = "Paiement";
             this.btnGoNext.UseVisualStyleBackColor = false;
@@ -174,9 +175,9 @@
             this.btnValid.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnValid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValid.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValid.Location = new System.Drawing.Point(192, 506);
+            this.btnValid.Location = new System.Drawing.Point(192, 494);
             this.btnValid.Name = "btnValid";
-            this.btnValid.Size = new System.Drawing.Size(235, 68);
+            this.btnValid.Size = new System.Drawing.Size(235, 80);
             this.btnValid.TabIndex = 13;
             this.btnValid.Text = "Valider tickets";
             this.btnValid.UseVisualStyleBackColor = false;

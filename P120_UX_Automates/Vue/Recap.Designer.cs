@@ -31,11 +31,8 @@
             this.lblRecap = new System.Windows.Forms.Label();
             this.btnNo = new System.Windows.Forms.Button();
             this.btnYes = new System.Windows.Forms.Button();
-            this.lblAgeReduct = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl2e = new System.Windows.Forms.Label();
-            this.lbl1_50e = new System.Windows.Forms.Label();
-            this.lblAgeAdult = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.lbl_recap = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRecap
@@ -75,60 +72,25 @@
             this.btnYes.UseVisualStyleBackColor = false;
             this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
-            // lblAgeReduct
+            // lblQuestion
             // 
-            this.lblAgeReduct.AutoSize = true;
-            this.lblAgeReduct.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgeReduct.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblAgeReduct.Location = new System.Drawing.Point(516, 187);
-            this.lblAgeReduct.Name = "lblAgeReduct";
-            this.lblAgeReduct.Size = new System.Drawing.Size(187, 24);
-            this.lblAgeReduct.TabIndex = 66;
-            this.lblAgeReduct.Text = "Enfant, étudiant";
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblQuestion.Location = new System.Drawing.Point(68, 432);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(691, 31);
+            this.lblQuestion.TabIndex = 72;
+            this.lblQuestion.Text = "Tous les tickets souhaités sont présent ci-dessus ?";
             // 
-            // label1
+            // lbl_recap
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(68, 432);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(691, 31);
-            this.label1.TabIndex = 72;
-            this.label1.Text = "Tous les tickets souhaités sont présent ci-dessus ?";
-            // 
-            // lbl2e
-            // 
-            this.lbl2e.AutoSize = true;
-            this.lbl2e.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2e.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbl2e.Location = new System.Drawing.Point(172, 149);
-            this.lbl2e.Name = "lbl2e";
-            this.lbl2e.Size = new System.Drawing.Size(41, 24);
-            this.lbl2e.TabIndex = 63;
-            this.lbl2e.Text = "2 €";
-            // 
-            // lbl1_50e
-            // 
-            this.lbl1_50e.AutoSize = true;
-            this.lbl1_50e.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1_50e.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbl1_50e.Location = new System.Drawing.Point(587, 149);
-            this.lbl1_50e.Name = "lbl1_50e";
-            this.lbl1_50e.Size = new System.Drawing.Size(73, 24);
-            this.lbl1_50e.TabIndex = 64;
-            this.lbl1_50e.Text = "1.50 €";
-            // 
-            // lblAgeAdult
-            // 
-            this.lblAgeAdult.AutoSize = true;
-            this.lblAgeAdult.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgeAdult.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblAgeAdult.Location = new System.Drawing.Point(150, 187);
-            this.lblAgeAdult.Name = "lblAgeAdult";
-            this.lblAgeAdult.Size = new System.Drawing.Size(119, 24);
-            this.lblAgeAdult.TabIndex = 65;
-            this.lblAgeAdult.Text = "25 - 40 ans";
+            this.lbl_recap.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_recap.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbl_recap.Location = new System.Drawing.Point(70, 104);
+            this.lbl_recap.Name = "lbl_recap";
+            this.lbl_recap.Size = new System.Drawing.Size(673, 316);
+            this.lbl_recap.TabIndex = 64;
             // 
             // Recap
             // 
@@ -136,14 +98,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(830, 586);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblRecap);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
-            this.Controls.Add(this.lblAgeReduct);
-            this.Controls.Add(this.lblAgeAdult);
-            this.Controls.Add(this.lbl1_50e);
-            this.Controls.Add(this.lbl2e);
+            this.Controls.Add(this.lbl_recap);
             this.Name = "Recap";
             this.Text = "Récapitulatif";
             this.ResumeLayout(false);
@@ -155,10 +114,7 @@
         private System.Windows.Forms.Label lblRecap;
         private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Button btnYes;
-        private System.Windows.Forms.Label lblAgeReduct;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl2e;
-        private System.Windows.Forms.Label lbl1_50e;
-        private System.Windows.Forms.Label lblAgeAdult;
+        private System.Windows.Forms.Label lblQuestion;
+        private System.Windows.Forms.Label lbl_recap;
     }
 }

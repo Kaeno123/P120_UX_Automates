@@ -59,9 +59,9 @@
             this.btnValid.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnValid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValid.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValid.Location = new System.Drawing.Point(195, 487);
+            this.btnValid.Location = new System.Drawing.Point(195, 473);
             this.btnValid.Name = "btnValid";
-            this.btnValid.Size = new System.Drawing.Size(235, 68);
+            this.btnValid.Size = new System.Drawing.Size(235, 80);
             this.btnValid.TabIndex = 26;
             this.btnValid.Text = "Valider tickets";
             this.btnValid.UseVisualStyleBackColor = false;
@@ -72,9 +72,9 @@
             this.btnGoNext.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGoNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGoNext.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoNext.Location = new System.Drawing.Point(505, 487);
+            this.btnGoNext.Location = new System.Drawing.Point(505, 473);
             this.btnGoNext.Name = "btnGoNext";
-            this.btnGoNext.Size = new System.Drawing.Size(243, 68);
+            this.btnGoNext.Size = new System.Drawing.Size(243, 80);
             this.btnGoNext.TabIndex = 25;
             this.btnGoNext.Text = "Paiement";
             this.btnGoNext.UseVisualStyleBackColor = false;
@@ -85,9 +85,9 @@
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(15, 487);
+            this.btnReturn.Location = new System.Drawing.Point(15, 473);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(91, 68);
+            this.btnReturn.Size = new System.Drawing.Size(91, 82);
             this.btnReturn.TabIndex = 24;
             this.btnReturn.Text = "<-";
             this.btnReturn.UseVisualStyleBackColor = false;
@@ -95,14 +95,14 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.AutoSize = true;
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(234, 318);
+            this.lblQuantity.Location = new System.Drawing.Point(181, 318);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(136, 31);
+            this.lblQuantity.Size = new System.Drawing.Size(179, 31);
             this.lblQuantity.TabIndex = 23;
             this.lblQuantity.Text = "Quantité";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel1
             // 
@@ -184,25 +184,25 @@
             // 
             // lblDisney
             // 
-            this.lblDisney.AutoSize = true;
             this.lblDisney.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisney.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDisney.Location = new System.Drawing.Point(272, 21);
+            this.lblDisney.Location = new System.Drawing.Point(201, 21);
             this.lblDisney.Name = "lblDisney";
-            this.lblDisney.Size = new System.Drawing.Size(310, 55);
+            this.lblDisney.Size = new System.Drawing.Size(425, 55);
             this.lblDisney.TabIndex = 27;
             this.lblDisney.Text = "DisneyLand";
+            this.lblDisney.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDate.Location = new System.Drawing.Point(292, 382);
+            this.lblDate.Location = new System.Drawing.Point(195, 382);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(78, 31);
+            this.lblDate.Size = new System.Drawing.Size(165, 31);
             this.lblDate.TabIndex = 28;
             this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // dateTime
             // 

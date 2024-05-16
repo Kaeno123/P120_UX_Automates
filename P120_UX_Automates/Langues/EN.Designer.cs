@@ -61,11 +61,65 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Adult.
+        /// </summary>
+        internal static string btnAdult {
+            get {
+                return ResourceManager.GetString("btnAdult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Airport.
         /// </summary>
         internal static string btnAeroport {
             get {
                 return ResourceManager.GetString("btnAeroport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Cash.
+        /// </summary>
+        internal static string btnCash {
+            get {
+                return ResourceManager.GetString("btnCash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Child.
+        /// </summary>
+        internal static string btnChild {
+            get {
+                return ResourceManager.GetString("btnChild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Credit card.
+        /// </summary>
+        internal static string btnCreditCard {
+            get {
+                return ResourceManager.GetString("btnCreditCard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Payment.
+        /// </summary>
+        internal static string btnGoNext {
+            get {
+                return ResourceManager.GetString("btnGoNext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à No.
+        /// </summary>
+        internal static string btnNo {
+            get {
+                return ResourceManager.GetString("btnNo", resourceCulture);
             }
         }
         
@@ -88,6 +142,24 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Valid tickets.
+        /// </summary>
+        internal static string btnValid {
+            get {
+                return ResourceManager.GetString("btnValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Yes.
+        /// </summary>
+        internal static string btnYes {
+            get {
+                return ResourceManager.GetString("btnYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à 1 to 5 days - Adult or Child.
         /// </summary>
         internal static string lbl1a5Jours {
@@ -97,11 +169,137 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Airport.
+        /// </summary>
+        internal static string lblAeroport {
+            get {
+                return ResourceManager.GetString("lblAeroport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 25 - 40 years.
+        /// </summary>
+        internal static string lblAgeAdult {
+            get {
+                return ResourceManager.GetString("lblAgeAdult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Child, Student.
+        /// </summary>
+        internal static string lblAgeReduct {
+            get {
+                return ResourceManager.GetString("lblAgeReduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Date.
+        /// </summary>
+        internal static string lblDate {
+            get {
+                return ResourceManager.GetString("lblDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à With the phone.
+        /// </summary>
+        internal static string lblGooglePay {
+            get {
+                return ResourceManager.GetString("lblGooglePay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Métro, Tram, Bus, RER.
         /// </summary>
         internal static string lblMetro {
             get {
                 return ResourceManager.GetString("lblMetro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Paris Visit.
+        /// </summary>
+        internal static string lblParis {
+            get {
+                return ResourceManager.GetString("lblParis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Proceed to payment!.
+        /// </summary>
+        internal static string lblProced {
+            get {
+                return ResourceManager.GetString("lblProced", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Quantity.
+        /// </summary>
+        internal static string lblQuantity {
+            get {
+                return ResourceManager.GetString("lblQuantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Are all the desired tickets listed above?.
+        /// </summary>
+        internal static string lblQuestion {
+            get {
+                return ResourceManager.GetString("lblQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Summary.
+        /// </summary>
+        internal static string lblRecap {
+            get {
+                return ResourceManager.GetString("lblRecap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Order summary.
+        /// </summary>
+        internal static string lblResumeCommand {
+            get {
+                return ResourceManager.GetString("lblResumeCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Standard.
+        /// </summary>
+        internal static string lblStandard {
+            get {
+                return ResourceManager.GetString("lblStandard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Total.
+        /// </summary>
+        internal static string lblTotal {
+            get {
+                return ResourceManager.GetString("lblTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Payment methods.
+        /// </summary>
+        internal static string lblTypeOfPay {
+            get {
+                return ResourceManager.GetString("lblTypeOfPay", resourceCulture);
             }
         }
     }

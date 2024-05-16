@@ -56,25 +56,25 @@
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDate.Location = new System.Drawing.Point(234, 387);
+            this.lblDate.Location = new System.Drawing.Point(189, 387);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(78, 31);
+            this.lblDate.Size = new System.Drawing.Size(123, 31);
             this.lblDate.TabIndex = 58;
             this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblAeroport
             // 
-            this.lblAeroport.AutoSize = true;
             this.lblAeroport.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAeroport.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblAeroport.Location = new System.Drawing.Point(285, 26);
             this.lblAeroport.Name = "lblAeroport";
-            this.lblAeroport.Size = new System.Drawing.Size(253, 55);
+            this.lblAeroport.Size = new System.Drawing.Size(282, 55);
             this.lblAeroport.TabIndex = 57;
             this.lblAeroport.Text = "Aéroport";
+            this.lblAeroport.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lstboxQuantity
             // 
@@ -90,9 +90,9 @@
             this.btnValid.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnValid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValid.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValid.Location = new System.Drawing.Point(208, 492);
+            this.btnValid.Location = new System.Drawing.Point(208, 480);
             this.btnValid.Name = "btnValid";
-            this.btnValid.Size = new System.Drawing.Size(235, 68);
+            this.btnValid.Size = new System.Drawing.Size(235, 80);
             this.btnValid.TabIndex = 56;
             this.btnValid.Text = "Valider tickets";
             this.btnValid.UseVisualStyleBackColor = false;
@@ -103,9 +103,9 @@
             this.btnGoNext.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGoNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGoNext.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoNext.Location = new System.Drawing.Point(518, 492);
+            this.btnGoNext.Location = new System.Drawing.Point(518, 480);
             this.btnGoNext.Name = "btnGoNext";
-            this.btnGoNext.Size = new System.Drawing.Size(243, 68);
+            this.btnGoNext.Size = new System.Drawing.Size(243, 80);
             this.btnGoNext.TabIndex = 55;
             this.btnGoNext.Text = "Paiement";
             this.btnGoNext.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(28, 492);
+            this.btnReturn.Location = new System.Drawing.Point(28, 480);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(91, 68);
+            this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 54;
             this.btnReturn.Text = "<-";
             this.btnReturn.UseVisualStyleBackColor = false;
@@ -126,14 +126,14 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.AutoSize = true;
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(176, 323);
+            this.lblQuantity.Location = new System.Drawing.Point(161, 323);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(136, 31);
+            this.lblQuantity.Size = new System.Drawing.Size(151, 31);
             this.lblQuantity.TabIndex = 53;
             this.lblQuantity.Text = "Quantité";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel1
             // 
@@ -192,7 +192,7 @@
             this.btnChild.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnChild.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChild.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChild.Location = new System.Drawing.Point(527, 110);
+            this.btnChild.Location = new System.Drawing.Point(516, 100);
             this.btnChild.Name = "btnChild";
             this.btnChild.Size = new System.Drawing.Size(205, 68);
             this.btnChild.TabIndex = 47;
@@ -205,7 +205,7 @@
             this.btnAdult.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAdult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdult.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.btnAdult.Location = new System.Drawing.Point(126, 110);
+            this.btnAdult.Location = new System.Drawing.Point(124, 100);
             this.btnAdult.Name = "btnAdult";
             this.btnAdult.Size = new System.Drawing.Size(205, 68);
             this.btnAdult.TabIndex = 46;

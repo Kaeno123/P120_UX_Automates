@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace P120_UX_Automates.Vue
     public partial class ParisVisite : Form
     {
         Controleur.ControlTickets _controller;
+        ResourceManager language;
         Tickets _tickets;
         string _choicePerson = "";
         double _price = 0;
@@ -43,9 +45,22 @@ namespace P120_UX_Automates.Vue
             _price = 1.50;
         }
 
+        public void UpdateLang(ResourceManager RMANAGER)
+        {
+            ResourceManager rManager = RMANAGER;
+
+            foreach (Control c in Controls)
+            {
+                if (rManager.GetString(c.Name) != null)
+                {
+                    c.Text = rManager.GetString(c.Name);
+                }
+            }
+        }
+
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             _controller.SwitchView("Menu");
         }
 
@@ -57,11 +72,9 @@ namespace P120_UX_Automates.Vue
             }
             else
             {
-                for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
-                {
-                    _tickets = new Tickets(_choicePerson, _price, );
-                    _controller.AddTicket(_tickets);
-                }
+                _tickets = new Tickets(_choicePerson, _price, DateTime.UtcNow);
+                _controller.AddTicket(_tickets);
+                _tickets.Number = Convert.ToInt16(lstboxQuantity.Text);
             }
         }
 
@@ -74,9 +87,8 @@ namespace P120_UX_Automates.Vue
         {
             if (_controller.VerifiyTicket() is true)//Vérifie si le client a validé au moins un ticket
             {
-                Recap recap = new Recap();
-                this.Close();
-                recap.Show();
+                this.Hide();
+                _controller.SwitchView("Recap");
             }
             else
             {
