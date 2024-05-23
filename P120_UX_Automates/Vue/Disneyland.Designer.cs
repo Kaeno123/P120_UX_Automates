@@ -43,13 +43,19 @@
             this.lblDisney = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.lblDurability = new System.Windows.Forms.Label();
+            this.pnlDays = new System.Windows.Forms.Panel();
+            this.rdbtn3 = new System.Windows.Forms.RadioButton();
+            this.rdbtn5 = new System.Windows.Forms.RadioButton();
+            this.rdbtn1 = new System.Windows.Forms.RadioButton();
+            this.pnlDays.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstboxQuantity
             // 
             this.lstboxQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstboxQuantity.ItemHeight = 31;
-            this.lstboxQuantity.Location = new System.Drawing.Point(376, 318);
+            this.lstboxQuantity.Location = new System.Drawing.Point(332, 318);
             this.lstboxQuantity.Name = "lstboxQuantity";
             this.lstboxQuantity.Size = new System.Drawing.Size(75, 35);
             this.lstboxQuantity.TabIndex = 14;
@@ -89,7 +95,7 @@
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(91, 82);
             this.btnReturn.TabIndex = 24;
-            this.btnReturn.Text = "<-";
+            this.btnReturn.Text = "<--";
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -97,7 +103,7 @@
             // 
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(181, 318);
+            this.lblQuantity.Location = new System.Drawing.Point(137, 318);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(179, 31);
             this.lblQuantity.TabIndex = 23;
@@ -130,9 +136,9 @@
             this.lblAgeAdult.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblAgeAdult.Location = new System.Drawing.Point(155, 229);
             this.lblAgeAdult.Name = "lblAgeAdult";
-            this.lblAgeAdult.Size = new System.Drawing.Size(119, 24);
+            this.lblAgeAdult.Size = new System.Drawing.Size(120, 24);
             this.lblAgeAdult.TabIndex = 20;
-            this.lblAgeAdult.Text = "25 - 40 ans";
+            this.lblAgeAdult.Text = "Dès 18 ans";
             // 
             // lbl1_50e
             // 
@@ -197,7 +203,7 @@
             // 
             this.lblDate.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDate.Location = new System.Drawing.Point(195, 382);
+            this.lblDate.Location = new System.Drawing.Point(151, 382);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(165, 31);
             this.lblDate.TabIndex = 28;
@@ -207,11 +213,72 @@
             // dateTime
             // 
             this.dateTime.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTime.Location = new System.Drawing.Point(376, 382);
+            this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTime.Location = new System.Drawing.Point(332, 382);
             this.dateTime.MinDate = new System.DateTime(2024, 4, 25, 0, 0, 0, 0);
             this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(410, 35);
+            this.dateTime.Size = new System.Drawing.Size(164, 35);
             this.dateTime.TabIndex = 29;
+            // 
+            // lblDurability
+            // 
+            this.lblDurability.AutoSize = true;
+            this.lblDurability.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDurability.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblDurability.Location = new System.Drawing.Point(596, 345);
+            this.lblDurability.Name = "lblDurability";
+            this.lblDurability.Size = new System.Drawing.Size(119, 24);
+            this.lblDurability.TabIndex = 49;
+            this.lblDurability.Text = "Durabilité";
+            // 
+            // pnlDays
+            // 
+            this.pnlDays.Controls.Add(this.rdbtn3);
+            this.pnlDays.Controls.Add(this.rdbtn5);
+            this.pnlDays.Controls.Add(this.rdbtn1);
+            this.pnlDays.Location = new System.Drawing.Point(549, 386);
+            this.pnlDays.Name = "pnlDays";
+            this.pnlDays.Size = new System.Drawing.Size(218, 31);
+            this.pnlDays.TabIndex = 68;
+            // 
+            // rdbtn3
+            // 
+            this.rdbtn3.AutoSize = true;
+            this.rdbtn3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtn3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.rdbtn3.Location = new System.Drawing.Point(92, 0);
+            this.rdbtn3.Name = "rdbtn3";
+            this.rdbtn3.Size = new System.Drawing.Size(41, 28);
+            this.rdbtn3.TabIndex = 65;
+            this.rdbtn3.TabStop = true;
+            this.rdbtn3.Text = "3";
+            this.rdbtn3.UseVisualStyleBackColor = true;
+            // 
+            // rdbtn5
+            // 
+            this.rdbtn5.AutoSize = true;
+            this.rdbtn5.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtn5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.rdbtn5.Location = new System.Drawing.Point(155, 0);
+            this.rdbtn5.Name = "rdbtn5";
+            this.rdbtn5.Size = new System.Drawing.Size(41, 28);
+            this.rdbtn5.TabIndex = 66;
+            this.rdbtn5.TabStop = true;
+            this.rdbtn5.Text = "5";
+            this.rdbtn5.UseVisualStyleBackColor = true;
+            // 
+            // rdbtn1
+            // 
+            this.rdbtn1.AutoSize = true;
+            this.rdbtn1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtn1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.rdbtn1.Location = new System.Drawing.Point(28, 0);
+            this.rdbtn1.Name = "rdbtn1";
+            this.rdbtn1.Size = new System.Drawing.Size(41, 28);
+            this.rdbtn1.TabIndex = 64;
+            this.rdbtn1.TabStop = true;
+            this.rdbtn1.Text = "1";
+            this.rdbtn1.UseVisualStyleBackColor = true;
             // 
             // Disneyland
             // 
@@ -219,6 +286,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(830, 586);
+            this.Controls.Add(this.pnlDays);
+            this.Controls.Add(this.lblDurability);
             this.Controls.Add(this.dateTime);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblDisney);
@@ -236,6 +305,8 @@
             this.Controls.Add(this.btnAdult);
             this.Name = "Disneyland";
             this.Text = "DisneyLand";
+            this.pnlDays.ResumeLayout(false);
+            this.pnlDays.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +329,10 @@
         private System.Windows.Forms.Label lblDisney;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.Label lblDurability;
+        private System.Windows.Forms.Panel pnlDays;
+        private System.Windows.Forms.RadioButton rdbtn3;
+        private System.Windows.Forms.RadioButton rdbtn5;
+        private System.Windows.Forms.RadioButton rdbtn1;
     }
 }

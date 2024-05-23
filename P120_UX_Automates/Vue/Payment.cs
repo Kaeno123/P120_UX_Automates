@@ -19,6 +19,7 @@ namespace P120_UX_Automates.Vue
         public Payment()
         {
             InitializeComponent();
+            
         }
 
         public void ShowTickets()

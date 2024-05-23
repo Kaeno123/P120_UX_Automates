@@ -83,6 +83,7 @@ namespace P120_UX_Automates.Controleur
             }
             else if (nameView == "Payment")
             {
+                _paymentView.ShowTickets();
                 _paymentView.Show();
             }
         }
@@ -115,7 +116,7 @@ namespace P120_UX_Automates.Controleur
         /// <summary>
         /// Supprime un ticket de la base de données
         /// </summary>
-        /// <param name="ticket"></param>
+        /// <param name="ticket">Ticket que l'on va retirer</param>
         public void RemoveTicket(Tickets ticket)
         {
             _dataView.Tickets.Remove(ticket);
@@ -131,8 +132,8 @@ namespace P120_UX_Automates.Controleur
             double sum = 0;
             foreach(Tickets ticket in _dataView.Tickets)
             {
-                tickets += $"X{ticket.Number}                            {ticket.ticketName}             {ticket.ProperDate}          {ticket.price} CHF\n";
-                sum += ticket.price * ticket.Number;
+                tickets += $"X{ticket.Number}                            {ticket.TicketName}             {ticket.ProperDate}          {ticket.Price} CHF\n";
+                sum += ticket.Price * ticket.Number;
             }
             tickets += $"\n----------------------------------------------------------------------------------------------\n                                                                                               {sum} CHF";
             return tickets;

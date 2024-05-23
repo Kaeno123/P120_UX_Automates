@@ -18,6 +18,7 @@ namespace P120_UX_Automates.Vue
         Tickets _tickets;
         string _choicePerson = "";
         double _price = 0;
+        int _nbDays = 0;
 
         public Controleur.ControlTickets Controller { get { return _controller; } set { _controller = value; } }
 
@@ -68,17 +69,26 @@ namespace P120_UX_Automates.Vue
 
         private void btnValid_Click(object sender, EventArgs e)
         {
-            if (_choicePerson == "" || lstboxQuantity.Text == "")//Vérifie si le client a bien séléctionné les éléments nécéssaires
+            foreach (RadioButton item in pnlDays.Controls)
             {
-                MessageBox.Show("Veuillez séléctionner le type et la quantité !", "Attention");
+                if (item.Checked is true)
+                {
+                    _nbDays = Convert.ToInt16(item.Text);
+                }
+            }
+
+            if (_choicePerson == "" || lstboxQuantity.Text == "" || _nbDays == 0)//Vérifie si le client a bien séléctionné les éléments nécéssaires
+            {
+                MessageBox.Show("Veuillez séléctionner toutes les options", "Attention");
             }
             else
             {
-                _tickets = new Tickets(_choicePerson, _price, DateTime.UtcNow);
+                _tickets = new Tickets(lblDisney.Text, _choicePerson, _price, DateTime.UtcNow, _nbDays);
                 _controller.AddTicket(_tickets);
                 _tickets.Number = Convert.ToInt16(lstboxQuantity.Text);
             }
         }
+
 
         /// <summary>
         /// Mène à la page récapitulative

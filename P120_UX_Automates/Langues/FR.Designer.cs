@@ -61,6 +61,15 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket enregistré.
+        /// </summary>
+        internal static string _ticketSave {
+            get {
+                return ResourceManager.GetString("_ticketSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Adulte.
         /// </summary>
         internal static string btnAdult {
@@ -133,6 +142,15 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Prix réduit.
+        /// </summary>
+        internal static string btnReductPrice {
+            get {
+                return ResourceManager.GetString("btnReductPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Standard.
         /// </summary>
         internal static string btnStandard {
@@ -178,7 +196,7 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 25 - 40 ans.
+        ///   Recherche une chaîne localisée semblable à Dès 18 ans.
         /// </summary>
         internal static string lblAgeAdult {
             get {
@@ -201,6 +219,15 @@ namespace P120_UX_Automates.Langues {
         internal static string lblDate {
             get {
                 return ResourceManager.GetString("lblDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Durabilité.
+        /// </summary>
+        internal static string lblDurability {
+            get {
+                return ResourceManager.GetString("lblDurability", resourceCulture);
             }
         }
         

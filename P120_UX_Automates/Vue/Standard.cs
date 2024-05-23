@@ -18,6 +18,7 @@ namespace P120_UX_Automates.Vue
         Tickets _tickets;
         string _choicePerson = "";
         double _price = 0;
+        string _ticketSave = "Ticket enregistré";
 
         public Controleur.ControlTickets Controller { get { return _controller; } set { _controller = value; } }
         public Standard()
@@ -27,7 +28,7 @@ namespace P120_UX_Automates.Vue
             for (int i = 1; i < 11; i++)
             {
                 lstboxQuantity.Items.Add(i.ToString());
-            }
+            }            
         }
 
         /// <summary>
@@ -49,7 +50,7 @@ namespace P120_UX_Automates.Vue
         public void btnAdult_Click(object sender, EventArgs e)
         {
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
-            btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
+            btnReductPrice.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
             _choicePerson = "Adulte";
             _price = 1.50;
         }
@@ -61,9 +62,9 @@ namespace P120_UX_Automates.Vue
         /// <param name="e"></param>
         private void btnChild_Click(object sender, EventArgs e)
         {
-            btnChild.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
+            btnReductPrice.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            _choicePerson = "Enfant";
+            _choicePerson = "Prix réduit";
             _price = 1;
         }
 
@@ -75,9 +76,9 @@ namespace P120_UX_Automates.Vue
             {
                 choicePerson = btnAdult.Text;
             }
-            else if (btnChild.Font.Underline is true)
+            else if (btnReductPrice.Font.Underline is true)
             {
-                choicePerson = btnChild.Text;
+                choicePerson = btnReductPrice.Text;
             }
             return choicePerson;
         }
@@ -95,15 +96,11 @@ namespace P120_UX_Automates.Vue
             }
             else
             {
-                _tickets = new Tickets(WhichType(), _price, DateTime.UtcNow);
+                _tickets = new Tickets(lblStandard.Text,WhichType(), _price, DateTime.UtcNow);
                 _controller.AddTicket(_tickets);
                 _tickets.Number = Convert.ToInt16(lstboxQuantity.Text);
 
-                /*for (int i = 0; i < Convert.ToInt16(lstboxQuantity.Text); i++)
-                {
-                    _tickets = new Tickets(_choicePerson, _price, DateTime.UtcNow);
-                    _controller.AddTicket(_tickets);
-                }*/
+                MessageBox.Show(_ticketSave);
             }
         }
 

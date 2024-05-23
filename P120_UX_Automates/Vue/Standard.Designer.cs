@@ -30,7 +30,7 @@
         {
             this.lblStandard = new System.Windows.Forms.Label();
             this.btnAdult = new System.Windows.Forms.Button();
-            this.btnChild = new System.Windows.Forms.Button();
+            this.btnReductPrice = new System.Windows.Forms.Button();
             this.lbl1_50e = new System.Windows.Forms.Label();
             this.lbl1e = new System.Windows.Forms.Label();
             this.lblAgeAdult = new System.Windows.Forms.Label();
@@ -61,24 +61,24 @@
             this.btnAdult.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.btnAdult.Location = new System.Drawing.Point(110, 111);
             this.btnAdult.Name = "btnAdult";
-            this.btnAdult.Size = new System.Drawing.Size(205, 68);
+            this.btnAdult.Size = new System.Drawing.Size(205, 79);
             this.btnAdult.TabIndex = 3;
             this.btnAdult.Text = "Adulte";
             this.btnAdult.UseVisualStyleBackColor = false;
             this.btnAdult.Click += new System.EventHandler(this.btnAdult_Click);
             // 
-            // btnChild
+            // btnReductPrice
             // 
-            this.btnChild.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnChild.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChild.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChild.Location = new System.Drawing.Point(502, 111);
-            this.btnChild.Name = "btnChild";
-            this.btnChild.Size = new System.Drawing.Size(205, 68);
-            this.btnChild.TabIndex = 4;
-            this.btnChild.Text = "Enfant";
-            this.btnChild.UseVisualStyleBackColor = false;
-            this.btnChild.Click += new System.EventHandler(this.btnChild_Click);
+            this.btnReductPrice.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnReductPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReductPrice.Font = new System.Drawing.Font("Cooper Black", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReductPrice.Location = new System.Drawing.Point(502, 111);
+            this.btnReductPrice.Name = "btnReductPrice";
+            this.btnReductPrice.Size = new System.Drawing.Size(205, 79);
+            this.btnReductPrice.TabIndex = 4;
+            this.btnReductPrice.Text = "Prix réduit";
+            this.btnReductPrice.UseVisualStyleBackColor = false;
+            this.btnReductPrice.Click += new System.EventHandler(this.btnChild_Click);
             // 
             // lbl1_50e
             // 
@@ -109,9 +109,9 @@
             this.lblAgeAdult.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblAgeAdult.Location = new System.Drawing.Point(152, 248);
             this.lblAgeAdult.Name = "lblAgeAdult";
-            this.lblAgeAdult.Size = new System.Drawing.Size(119, 24);
+            this.lblAgeAdult.Size = new System.Drawing.Size(120, 24);
             this.lblAgeAdult.TabIndex = 7;
-            this.lblAgeAdult.Text = "25 - 40 ans";
+            this.lblAgeAdult.Text = "Dès 18 ans";
             // 
             // lblAgeReduct
             // 
@@ -153,7 +153,7 @@
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 11;
-            this.btnReturn.Text = "<-";
+            this.btnReturn.Text = "<--";
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -189,6 +189,7 @@
             this.lstboxQuantity.ItemHeight = 31;
             this.lstboxQuantity.Location = new System.Drawing.Point(373, 347);
             this.lstboxQuantity.Name = "lstboxQuantity";
+            this.lstboxQuantity.ScrollAlwaysVisible = true;
             this.lstboxQuantity.Size = new System.Drawing.Size(75, 35);
             this.lstboxQuantity.TabIndex = 0;
             // 
@@ -208,7 +209,7 @@
             this.Controls.Add(this.lblAgeAdult);
             this.Controls.Add(this.lbl1e);
             this.Controls.Add(this.lbl1_50e);
-            this.Controls.Add(this.btnChild);
+            this.Controls.Add(this.btnReductPrice);
             this.Controls.Add(this.btnAdult);
             this.Controls.Add(this.lblStandard);
             this.Name = "Standard";
@@ -222,7 +223,7 @@
 
         private System.Windows.Forms.Label lblStandard;
         private System.Windows.Forms.Button btnAdult;
-        private System.Windows.Forms.Button btnChild;
+        private System.Windows.Forms.Button btnReductPrice;
         private System.Windows.Forms.Label lbl1_50e;
         private System.Windows.Forms.Label lbl1e;
         private System.Windows.Forms.Label lblAgeAdult;

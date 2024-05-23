@@ -37,14 +37,14 @@
             // 
             // lblRecap
             // 
-            this.lblRecap.AutoSize = true;
             this.lblRecap.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecap.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblRecap.Location = new System.Drawing.Point(246, 25);
+            this.lblRecap.Location = new System.Drawing.Point(0, 25);
             this.lblRecap.Name = "lblRecap";
-            this.lblRecap.Size = new System.Drawing.Size(346, 55);
+            this.lblRecap.Size = new System.Drawing.Size(829, 55);
             this.lblRecap.TabIndex = 71;
             this.lblRecap.Text = "Récapitulatif";
+            this.lblRecap.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnNo
             // 

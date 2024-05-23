@@ -141,6 +141,9 @@
   <data name="btnParisVisite" xml:space="preserve">
     <value>Paris Visit</value>
   </data>
+  <data name="btnReductPrice" xml:space="preserve">
+    <value>Reduced price</value>
+  </data>
   <data name="btnStandard" xml:space="preserve">
     <value>Standard</value>
   </data>
@@ -157,13 +160,16 @@
     <value>Airport</value>
   </data>
   <data name="lblAgeAdult" xml:space="preserve">
-    <value>25 - 40 years</value>
+    <value>From 18 years</value>
   </data>
   <data name="lblAgeReduct" xml:space="preserve">
     <value>Child, Student</value>
   </data>
   <data name="lblDate" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="lblDurability" xml:space="preserve">
+    <value>Durability</value>
   </data>
   <data name="lblGooglePay" xml:space="preserve">
     <value>With the phone</value>
@@ -197,5 +203,8 @@
   </data>
   <data name="lblTypeOfPay" xml:space="preserve">
     <value>Payment methods</value>
+  </data>
+  <data name="_ticketSave" xml:space="preserve">
+    <value>Ticket registered</value>
   </data>
 </root>
