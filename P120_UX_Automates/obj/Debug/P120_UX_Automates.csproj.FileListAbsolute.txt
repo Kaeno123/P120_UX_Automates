@@ -21,6 +21,28 @@ D:\Module 120\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.ParisVisi
 D:\Module 120\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Recap.resources
 D:\Module 120\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Payment.resources
 D:\Module 120\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.TypeOfPayment.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.exe.config
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.exe
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.pdb
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.csproj.AssemblyReference.cache
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Aeroport.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Menu.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Langues.ESP.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Langues.ITA.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Langues.FR.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Langues.DE.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Langues.EN.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Properties.Resources.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.ParisVisite.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Payment.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.TypeOfPayment.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Recap.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Standard.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.Vue.Disneyland.resources
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.csproj.GenerateResource.cache
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.csproj.CoreCompileInputs.cache
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.exe
+E:\Module 120 - UX UI\Projet\P120_UX_Automates\obj\Debug\P120_UX_Automates.pdb
 D:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.exe.config
 D:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.exe
 D:\Module 120 - UX UI\Projet\P120_UX_Automates\bin\Debug\P120_UX_Automates.pdb

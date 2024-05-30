@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿///ETML
+///Auteur : Kaeno Eyer
+///Date : 02.05.2024
+///Description : Code de la Vue de la page Recap
+///
+using System;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P120_UX_Automates.Vue
@@ -21,23 +19,42 @@ namespace P120_UX_Automates.Vue
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Montre les tickets enregistrés
+        /// </summary>
         public void ShowTickets()
         {
-            lbl_recap.Text = _controller.ShowTicketsData();
+            lbl_recap.Text = _controller.ShowTicketsDataQty();
+            lbl_date.Text = _controller.ShowTicketsDate();
+            lbl_price.Text = _controller.ShowTicketsPrice();
         }
 
+        /// <summary>
+        /// Retourne au menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNo_Click(object sender, EventArgs e)
         {
             this.Hide();
             _controller.SwitchView("Menu");
         }
 
+        /// <summary>
+        /// Mène à la page Choix de paiement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnYes_Click(object sender, EventArgs e)
         {
             this.Hide();
             _controller.SwitchView("typeOfPayment");
         }
 
+        /// <summary>
+        /// Met à jour la langue dans la page Recap
+        /// </summary>
+        /// <param name="RMANAGER"></param>
         public void UpdateLang(ResourceManager RMANAGER)
         {
             ResourceManager rManager = RMANAGER;

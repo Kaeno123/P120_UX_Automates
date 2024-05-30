@@ -168,9 +168,6 @@
   <data name="lblDate" xml:space="preserve">
     <value>Fecha</value>
   </data>
-  <data name="lblDurability" xml:space="preserve">
-    <value>Durabilidad</value>
-  </data>
   <data name="lblGooglePay" xml:space="preserve">
     <value>Teléfono</value>
   </data>
@@ -203,6 +200,12 @@
   </data>
   <data name="lblTypeOfPay" xml:space="preserve">
     <value>Métodos de pago</value>
+  </data>
+  <data name="lblValidity" xml:space="preserve">
+    <value>validez</value>
+  </data>
+  <data name="lblValidityStandard" xml:space="preserve">
+    <value>Validez: 1 día</value>
   </data>
   <data name="_ticketSave" xml:space="preserve">
     <value>Boleto registrado</value>

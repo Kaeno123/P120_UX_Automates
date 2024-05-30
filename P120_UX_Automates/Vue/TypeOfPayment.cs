@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿///ETML
+///Auteur : Kaeno Eyer
+///Date : 02.05.2024
+///Description : Code de la Vue de la page Type de paiement
+///
+using System;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P120_UX_Automates.Vue
@@ -18,24 +18,43 @@ namespace P120_UX_Automates.Vue
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Si l'user choisit de payer en cash
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCash_Click(object sender, EventArgs e)
         {
             this.Hide();
             _controller.SwitchView("Payment");
         }
 
+        /// <summary>
+        /// Si l'user choisit de payer avec une carte de crédit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCreditCard_Click(object sender, EventArgs e)
         {
             this.Hide();
             _controller.SwitchView("Payment");
         }
 
+        /// <summary>
+        /// Si l'user choisit de payer avec google Pay
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGooglePay_Click(object sender, EventArgs e)
         {
             this.Hide();
             _controller.SwitchView("Payment");
         }
 
+        /// <summary>
+        /// Met à jour la langue dans la page TypeOfPayment
+        /// </summary>
+        /// <param name="RMANAGER">Langue sélectionnée</param>
         public void UpdateLang(ResourceManager RMANAGER)
         {
             ResourceManager rManager = RMANAGER;

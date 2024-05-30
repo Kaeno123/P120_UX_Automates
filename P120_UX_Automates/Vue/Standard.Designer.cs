@@ -40,7 +40,10 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnGoNext = new System.Windows.Forms.Button();
             this.btnValid = new System.Windows.Forms.Button();
-            this.lstboxQuantity = new System.Windows.Forms.ListBox();
+            this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblValidityStandard = new System.Windows.Forms.Label();
+            this.coboxQuantity = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblStandard
@@ -48,7 +51,7 @@
             this.lblStandard.AutoSize = true;
             this.lblStandard.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStandard.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblStandard.Location = new System.Drawing.Point(289, 30);
+            this.lblStandard.Location = new System.Drawing.Point(289, 28);
             this.lblStandard.Name = "lblStandard";
             this.lblStandard.Size = new System.Drawing.Size(251, 55);
             this.lblStandard.TabIndex = 2;
@@ -137,7 +140,7 @@
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblQuantity.Location = new System.Drawing.Point(192, 347);
+            this.lblQuantity.Location = new System.Drawing.Point(192, 334);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(175, 31);
             this.lblQuantity.TabIndex = 10;
@@ -148,12 +151,12 @@
             // 
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.Location = new System.Drawing.Point(12, 494);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 11;
-            this.btnReturn.Text = "<--";
+            this.btnReturn.Text = "🠔";
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -183,23 +186,73 @@
             this.btnValid.UseVisualStyleBackColor = false;
             this.btnValid.Click += new System.EventHandler(this.btnValid_Click);
             // 
-            // lstboxQuantity
+            // dateTime
             // 
-            this.lstboxQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstboxQuantity.ItemHeight = 31;
-            this.lstboxQuantity.Location = new System.Drawing.Point(373, 347);
-            this.lstboxQuantity.Name = "lstboxQuantity";
-            this.lstboxQuantity.ScrollAlwaysVisible = true;
-            this.lstboxQuantity.Size = new System.Drawing.Size(75, 35);
-            this.lstboxQuantity.TabIndex = 0;
+            this.dateTime.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTime.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTime.Location = new System.Drawing.Point(373, 402);
+            this.dateTime.MinDate = new System.DateTime(2024, 5, 24, 0, 0, 0, 0);
+            this.dateTime.Name = "dateTime";
+            this.dateTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dateTime.Size = new System.Drawing.Size(168, 35);
+            this.dateTime.TabIndex = 46;
+            this.dateTime.Value = new System.DateTime(2024, 5, 30, 0, 0, 0, 0);
+            // 
+            // lblDate
+            // 
+            this.lblDate.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblDate.Location = new System.Drawing.Point(227, 402);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(140, 31);
+            this.lblDate.TabIndex = 45;
+            this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblValidityStandard
+            // 
+            this.lblValidityStandard.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblValidityStandard.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValidityStandard.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblValidityStandard.Location = new System.Drawing.Point(547, 406);
+            this.lblValidityStandard.Name = "lblValidityStandard";
+            this.lblValidityStandard.Size = new System.Drawing.Size(175, 31);
+            this.lblValidityStandard.TabIndex = 47;
+            this.lblValidityStandard.Text = "Validité : 1 jour";
+            this.lblValidityStandard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // coboxQuantity
+            // 
+            this.coboxQuantity.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coboxQuantity.FormattingEnabled = true;
+            this.coboxQuantity.ItemHeight = 24;
+            this.coboxQuantity.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.coboxQuantity.Location = new System.Drawing.Point(373, 337);
+            this.coboxQuantity.Name = "coboxQuantity";
+            this.coboxQuantity.Size = new System.Drawing.Size(49, 32);
+            this.coboxQuantity.TabIndex = 69;
+            this.coboxQuantity.Text = "1";
             // 
             // Standard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(834, 586);
-            this.Controls.Add(this.lstboxQuantity);
+            this.Controls.Add(this.coboxQuantity);
+            this.Controls.Add(this.lblValidityStandard);
+            this.Controls.Add(this.dateTime);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnValid);
             this.Controls.Add(this.btnGoNext);
             this.Controls.Add(this.btnReturn);
@@ -233,6 +286,9 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnGoNext;
         private System.Windows.Forms.Button btnValid;
-        private System.Windows.Forms.ListBox lstboxQuantity;
+        private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblValidityStandard;
+        private System.Windows.Forms.ComboBox coboxQuantity;
     }
 }

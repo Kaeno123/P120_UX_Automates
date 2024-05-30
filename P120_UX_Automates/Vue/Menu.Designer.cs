@@ -228,11 +228,11 @@
             this.pnlLanguages.Size = new System.Drawing.Size(810, 62);
             this.pnlLanguages.TabIndex = 14;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(834, 586);
             this.Controls.Add(this.pnlLanguages);
             this.Controls.Add(this.lblRoissy);
@@ -244,8 +244,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblMetro);
             this.Controls.Add(this.btnStandard);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Menu";
+            this.Text = "Menu";
             this.pnlLanguages.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

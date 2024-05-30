@@ -223,15 +223,6 @@ namespace P120_UX_Automates.Langues {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Durabilidad.
-        /// </summary>
-        internal static string lblDurability {
-            get {
-                return ResourceManager.GetString("lblDurability", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Teléfono.
         /// </summary>
         internal static string lblGooglePay {
@@ -327,6 +318,24 @@ namespace P120_UX_Automates.Langues {
         internal static string lblTypeOfPay {
             get {
                 return ResourceManager.GetString("lblTypeOfPay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à validez.
+        /// </summary>
+        internal static string lblValidity {
+            get {
+                return ResourceManager.GetString("lblValidity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Validez: 1 día.
+        /// </summary>
+        internal static string lblValidityStandard {
+            get {
+                return ResourceManager.GetString("lblValidityStandard", resourceCulture);
             }
         }
     }

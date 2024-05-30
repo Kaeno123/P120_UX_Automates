@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿///ETML
+///Auteur : Kaeno Eyer
+///Date : 18.04.2024
+///Description : Code de la Vue de la page Standard
+///
+using System;
 using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P120_UX_Automates.Vue
@@ -14,9 +13,7 @@ namespace P120_UX_Automates.Vue
     public partial class Standard : Form
     {
         Controleur.ControlTickets _controller;
-        ResourceManager language;
         Tickets _tickets;
-        string _choicePerson = "";
         double _price = 0;
         string _ticketSave = "Ticket enregistré";
 
@@ -24,11 +21,8 @@ namespace P120_UX_Automates.Vue
         public Standard()
         {
             InitializeComponent();
-
-            for (int i = 1; i < 11; i++)
-            {
-                lstboxQuantity.Items.Add(i.ToString());
-            }            
+            /*language = new ResourceManager("P120_UX_Automates.Langues.FR", typeof(Standard).Assembly);
+            _ticketSave = language.GetString("Ticket enregistré");*/
         }
 
         /// <summary>
@@ -43,7 +37,7 @@ namespace P120_UX_Automates.Vue
         }
 
         /// <summary>
-        /// Lorsque le client choisi le ticket adulte
+        /// Conserve le choix de l'user et ce que ça implique
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -51,12 +45,11 @@ namespace P120_UX_Automates.Vue
         {
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnReductPrice.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            _choicePerson = "Adulte";
             _price = 1.50;
         }
 
         /// <summary>
-        /// Lorsque le client choisi le ticket enfant
+        /// Conserve le choix de l'user et ce que ça implique
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -64,10 +57,13 @@ namespace P120_UX_Automates.Vue
         {
             btnReductPrice.Font = new Font(btnAdult.Font, btnAdult.Font.Style | FontStyle.Underline);
             btnAdult.Font = new Font(btnAdult.Font, btnAdult.Font.Style & ~FontStyle.Underline);
-            _choicePerson = "Prix réduit";
             _price = 1;
         }
 
+        /// <summary>
+        /// Détermine le choix de l'user entre Adulte et Tarif réduit
+        /// </summary>
+        /// <returns>Retourne le choix de ticket</returns>
         public string WhichType()
         {
             string choicePerson = "";
@@ -84,26 +80,34 @@ namespace P120_UX_Automates.Vue
         }
 
         /// <summary>
-        /// Valide le choix d'un ticket tout en vérifiant si les conditions sont présentes
+        /// Vérifie si l'user à tout séléctionné, si oui, il l'enregistre et envoie un msg de confirmation
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnValid_Click(object sender, EventArgs e)
         {
-            if (_choicePerson == "" || lstboxQuantity.Text == "")//Vérifie si le client a bien séléctionné les éléments nécéssaires
+            if (WhichType() == "" || coboxQuantity.Text == "")//Vérifie si le client a bien séléctionné les éléments nécéssaires
             {
                 MessageBox.Show("Veuillez séléctionner le type et la quantité !", "Attention");
             }
             else
             {
-                _tickets = new Tickets(lblStandard.Text,WhichType(), _price, DateTime.UtcNow);
-                _controller.AddTicket(_tickets);
-                _tickets.Number = Convert.ToInt16(lstboxQuantity.Text);
+                _tickets = new Tickets(lblStandard.Text,WhichType(), _price, dateTime.Value.ToString());
+                _tickets.Number = Convert.ToInt16(coboxQuantity.Text);
 
+                //Vérifie que le ticket n'a pas déjà été choisi, de cette manière la database et l'affichage se porte mieux
+                if (_controller.CheckTicketSelected(_tickets, _tickets.Number) is false)
+                {
+                    _controller.AddTicket(_tickets);
+                }
                 MessageBox.Show(_ticketSave);
             }
         }
 
+        /// <summary>
+        /// Met à jour la langue dans la page Standard
+        /// </summary>
+        /// <param name="RMANAGER">Langue choisie lors de l'appelle de la méthode</param>
         public void UpdateLang(ResourceManager RMANAGER)
         {
             ResourceManager rManager = RMANAGER;

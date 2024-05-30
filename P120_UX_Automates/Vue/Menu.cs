@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿///ETML
+///Auteur : Kaeno Eyer
+///Date : 18.04.2024
+///Description : Code de la Vue de la page Menu
+///
+using System;
 using System.Windows.Forms;
 using System.Resources;
 
@@ -21,6 +19,8 @@ namespace P120_UX_Automates.Vue
             InitializeComponent();
         }
 
+        /*Méthodes permettant de changer la langue du menu en cliquant
+          sur un bouton assigné à la langue souhaitée*/
         private void btnFrancais_Click(object sender, EventArgs e)
         {
             foreach (Button languages in pnlLanguages.Controls)
@@ -76,6 +76,10 @@ namespace P120_UX_Automates.Vue
             _controller.UpdateLang(language);
         }
 
+        /// <summary>
+        /// Met à jour la langue dans la page Menu
+        /// </summary>
+        /// <param name="RMANAGER"></param>
         public void UpdateLang(ResourceManager RMANAGER)
         {
             ResourceManager rManager = RMANAGER;
@@ -89,6 +93,7 @@ namespace P120_UX_Automates.Vue
             }           
         }
 
+        /*Méthodes permettant d'aller sur la page souhaité en fonction du bouton assigé à la page */
         private void btnStandard_Click(object sender, EventArgs e)
         {
             this.Hide();

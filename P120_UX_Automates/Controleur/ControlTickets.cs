@@ -2,6 +2,7 @@
 using P120_UX_Automates.Vue;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -47,7 +48,7 @@ namespace P120_UX_Automates.Controleur
         }
        
         /// <summary>
-        /// 
+        /// Permet de changer de Vue
         /// </summary>
         /// <param name="nameView"></param>
         public void SwitchView(string nameView)
@@ -121,28 +122,83 @@ namespace P120_UX_Automates.Controleur
         {
             _dataView.Tickets.Remove(ticket);
         }
-        
+
         /// <summary>
-        /// Affiche le récapitulatif des tickets choisies
+        /// Affiche la quantité de ticket en fonction de leur type (Nom) 
         /// </summary>
-        /// <returns>Retourne la chaine de caractère contenant toutes les informations</returns>
-        public string ShowTicketsData()
+        /// <returns>Retourne les valeurs susmentionnées</returns>
+        public string ShowTicketsDataQty()
         {
-            string tickets = "Quantité               Type                 Date                        Prix\n\n";
-            double sum = 0;
-            foreach(Tickets ticket in _dataView.Tickets)
+            string tickets = "Quantité / Type\n\n";
+            foreach (Tickets ticket in _dataView.Tickets)
             {
-                tickets += $"X{ticket.Number}                            {ticket.TicketName}             {ticket.ProperDate}          {ticket.Price} CHF\n";
+                if (ticket.Validity == 0)
+                {
+                    tickets += $"X{ticket.Number}     {ticket.TicketName} / {ticket.Type}\n";
+                }
+                else
+                {
+                    tickets += $"X{ticket.Number}     {ticket.TicketName}({ticket.Validity}) / {ticket.Type}\n";
+                }
+            }
+            return tickets;
+        }
+
+        /// <summary>
+        /// Affiche la date du ticket en fonction de leur type (Nom) 
+        /// </summary>
+        /// <returns>Retourne la valeur susmentionnée</returns>
+        public string ShowTicketsDate()
+        {
+            string tickets = "Date\n\n";
+            foreach (Tickets ticket in _dataView.Tickets)
+            {
+                tickets += $"{ticket.ProperDate}\n";
+            }
+            tickets += $"\n\n                    Total   :";
+            return tickets;
+        }
+
+        /// <summary>
+        /// Affiche la date du ticket en fonction de leur type (Nom) 
+        /// </summary>
+        /// <returns>Retourne la valeur susmentionnée</returns>
+        public string ShowTicketsPrice()
+        {
+            string tickets = "Prix\n\n";
+            double sum = 0;
+            foreach (Tickets ticket in _dataView.Tickets)
+            {
+                tickets += $"{ticket.Price} €\n";
                 sum += ticket.Price * ticket.Number;
             }
-            tickets += $"\n----------------------------------------------------------------------------------------------\n                                                                                               {sum} CHF";
+            tickets += $"\n\n{sum} €";
             return tickets;
+        }
+
+        /// <summary>
+        /// Vérifie si le ticket que l'user souhaite prendre n'a pas été déja choisi
+        /// </summary>
+        /// <param name="ticket">Ticket choisi</param>
+        /// <returns>Retourne un bool disant s'il a déjà été choisi ou pas</returns>
+        public bool CheckTicketSelected(Tickets ticket, int quantity)
+        {
+            bool ticketAlreadySelected = false;
+            foreach (Tickets t in _dataView.Tickets)
+            {
+                if (t.TicketName == ticket.TicketName && t.Type == ticket.Type && t.Date == ticket.Date && t.Validity == ticket.Validity)
+                {
+                    t.Number += quantity;
+                    ticketAlreadySelected = true;
+                }
+            }
+            return ticketAlreadySelected;
         }
 
         /// <summary>
         /// Vérifie si le client a validé au moins un ticket avant de passer au paiement
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Vérifie si l'user a choisi au moins un ticket pour passer au paiement</returns>
         public bool VerifiyTicket()
         {
             bool numberOk = false;

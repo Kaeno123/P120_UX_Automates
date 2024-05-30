@@ -100,7 +100,7 @@
             // 
             this.lblTypeOfPay.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTypeOfPay.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblTypeOfPay.Location = new System.Drawing.Point(170, 36);
+            this.lblTypeOfPay.Location = new System.Drawing.Point(170, 34);
             this.lblTypeOfPay.Name = "lblTypeOfPay";
             this.lblTypeOfPay.Size = new System.Drawing.Size(511, 55);
             this.lblTypeOfPay.TabIndex = 28;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(830, 586);
             this.Controls.Add(this.btnGooglePay);
             this.Controls.Add(this.lblCreditCard);
@@ -134,7 +134,7 @@
             this.Controls.Add(this.btnCash);
             this.Controls.Add(this.lblTypeOfPay);
             this.Name = "TypeOfPayment";
-            this.Text = "Type de paiement";
+            this.Text = "Moyens de paiement";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,7 +31,6 @@
             this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblAeroport = new System.Windows.Forms.Label();
-            this.lstboxQuantity = new System.Windows.Forms.ListBox();
             this.btnValid = new System.Windows.Forms.Button();
             this.btnGoNext = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
@@ -43,20 +42,22 @@
             this.lbl2e = new System.Windows.Forms.Label();
             this.btnChild = new System.Windows.Forms.Button();
             this.btnAdult = new System.Windows.Forms.Button();
-            this.lblDurability = new System.Windows.Forms.Label();
+            this.lblValidity = new System.Windows.Forms.Label();
             this.rdbtn1 = new System.Windows.Forms.RadioButton();
             this.rdbtn3 = new System.Windows.Forms.RadioButton();
             this.rdbtn5 = new System.Windows.Forms.RadioButton();
             this.pnlDays = new System.Windows.Forms.Panel();
+            this.coboxQuantity = new System.Windows.Forms.ComboBox();
             this.pnlDays.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTime
             // 
+            this.dateTime.CustomFormat = "";
             this.dateTime.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTime.Location = new System.Drawing.Point(318, 387);
-            this.dateTime.MinDate = new System.DateTime(2024, 4, 25, 0, 0, 0, 0);
+            this.dateTime.MinDate = new System.DateTime(2024, 5, 24, 0, 0, 0, 0);
             this.dateTime.Name = "dateTime";
             this.dateTime.Size = new System.Drawing.Size(170, 35);
             this.dateTime.TabIndex = 59;
@@ -76,21 +77,12 @@
             // 
             this.lblAeroport.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAeroport.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblAeroport.Location = new System.Drawing.Point(285, 26);
+            this.lblAeroport.Location = new System.Drawing.Point(285, 24);
             this.lblAeroport.Name = "lblAeroport";
             this.lblAeroport.Size = new System.Drawing.Size(282, 55);
             this.lblAeroport.TabIndex = 57;
             this.lblAeroport.Text = "Aéroport";
             this.lblAeroport.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lstboxQuantity
-            // 
-            this.lstboxQuantity.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstboxQuantity.ItemHeight = 31;
-            this.lstboxQuantity.Location = new System.Drawing.Point(318, 323);
-            this.lstboxQuantity.Name = "lstboxQuantity";
-            this.lstboxQuantity.Size = new System.Drawing.Size(75, 35);
-            this.lstboxQuantity.TabIndex = 45;
             // 
             // btnValid
             // 
@@ -122,12 +114,12 @@
             // 
             this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.Location = new System.Drawing.Point(28, 480);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(91, 80);
             this.btnReturn.TabIndex = 54;
-            this.btnReturn.Text = "<--";
+            this.btnReturn.Text = "🠔";
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
@@ -155,7 +147,7 @@
             this.lblAgeReduct.AutoSize = true;
             this.lblAgeReduct.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgeReduct.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblAgeReduct.Location = new System.Drawing.Point(534, 234);
+            this.lblAgeReduct.Location = new System.Drawing.Point(532, 234);
             this.lblAgeReduct.Name = "lblAgeReduct";
             this.lblAgeReduct.Size = new System.Drawing.Size(187, 24);
             this.lblAgeReduct.TabIndex = 51;
@@ -166,7 +158,7 @@
             this.lblAgeAdult.AutoSize = true;
             this.lblAgeAdult.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgeAdult.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblAgeAdult.Location = new System.Drawing.Point(168, 234);
+            this.lblAgeAdult.Location = new System.Drawing.Point(174, 234);
             this.lblAgeAdult.Name = "lblAgeAdult";
             this.lblAgeAdult.Size = new System.Drawing.Size(89, 24);
             this.lblAgeAdult.TabIndex = 50;
@@ -177,18 +169,18 @@
             this.lbl1_50e.AutoSize = true;
             this.lbl1_50e.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1_50e.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbl1_50e.Location = new System.Drawing.Point(605, 196);
+            this.lbl1_50e.Location = new System.Drawing.Point(588, 192);
             this.lbl1_50e.Name = "lbl1_50e";
             this.lbl1_50e.Size = new System.Drawing.Size(73, 24);
             this.lbl1_50e.TabIndex = 49;
-            this.lbl1_50e.Text = "1.50 €";
+            this.lbl1_50e.Text = "1,50 €";
             // 
             // lbl2e
             // 
             this.lbl2e.AutoSize = true;
             this.lbl2e.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2e.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbl2e.Location = new System.Drawing.Point(190, 196);
+            this.lbl2e.Location = new System.Drawing.Point(204, 192);
             this.lbl2e.Name = "lbl2e";
             this.lbl2e.Size = new System.Drawing.Size(41, 24);
             this.lbl2e.TabIndex = 48;
@@ -220,16 +212,16 @@
             this.btnAdult.UseVisualStyleBackColor = false;
             this.btnAdult.Click += new System.EventHandler(this.btnAdult_Click);
             // 
-            // lblDurability
+            // lblValidity
             // 
-            this.lblDurability.AutoSize = true;
-            this.lblDurability.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDurability.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDurability.Location = new System.Drawing.Point(611, 352);
-            this.lblDurability.Name = "lblDurability";
-            this.lblDurability.Size = new System.Drawing.Size(119, 24);
-            this.lblDurability.TabIndex = 63;
-            this.lblDurability.Text = "Durabilité";
+            this.lblValidity.AutoSize = true;
+            this.lblValidity.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValidity.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblValidity.Location = new System.Drawing.Point(588, 352);
+            this.lblValidity.Name = "lblValidity";
+            this.lblValidity.Size = new System.Drawing.Size(95, 24);
+            this.lblValidity.TabIndex = 63;
+            this.lblValidity.Text = "Validité";
             // 
             // rdbtn1
             // 
@@ -243,6 +235,7 @@
             this.rdbtn1.TabStop = true;
             this.rdbtn1.Text = "1";
             this.rdbtn1.UseVisualStyleBackColor = true;
+            this.rdbtn1.CheckedChanged += new System.EventHandler(this.rdbtn1_CheckedChanged);
             // 
             // rdbtn3
             // 
@@ -256,6 +249,7 @@
             this.rdbtn3.TabStop = true;
             this.rdbtn3.Text = "3";
             this.rdbtn3.UseVisualStyleBackColor = true;
+            this.rdbtn3.CheckedChanged += new System.EventHandler(this.rdbtn3_CheckedChanged);
             // 
             // rdbtn5
             // 
@@ -269,29 +263,51 @@
             this.rdbtn5.TabStop = true;
             this.rdbtn5.Text = "5";
             this.rdbtn5.UseVisualStyleBackColor = true;
+            this.rdbtn5.CheckedChanged += new System.EventHandler(this.rdbtn5_CheckedChanged);
             // 
             // pnlDays
             // 
             this.pnlDays.Controls.Add(this.rdbtn3);
             this.pnlDays.Controls.Add(this.rdbtn5);
             this.pnlDays.Controls.Add(this.rdbtn1);
-            this.pnlDays.Location = new System.Drawing.Point(571, 391);
+            this.pnlDays.Location = new System.Drawing.Point(542, 391);
             this.pnlDays.Name = "pnlDays";
             this.pnlDays.Size = new System.Drawing.Size(218, 31);
             this.pnlDays.TabIndex = 67;
+            // 
+            // coboxQuantity
+            // 
+            this.coboxQuantity.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coboxQuantity.FormattingEnabled = true;
+            this.coboxQuantity.ItemHeight = 24;
+            this.coboxQuantity.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.coboxQuantity.Location = new System.Drawing.Point(318, 326);
+            this.coboxQuantity.Name = "coboxQuantity";
+            this.coboxQuantity.Size = new System.Drawing.Size(49, 32);
+            this.coboxQuantity.TabIndex = 68;
+            this.coboxQuantity.Text = "1";
             // 
             // Aeroport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(830, 586);
+            this.Controls.Add(this.coboxQuantity);
             this.Controls.Add(this.pnlDays);
-            this.Controls.Add(this.lblDurability);
+            this.Controls.Add(this.lblValidity);
             this.Controls.Add(this.dateTime);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblAeroport);
-            this.Controls.Add(this.lstboxQuantity);
             this.Controls.Add(this.btnValid);
             this.Controls.Add(this.btnGoNext);
             this.Controls.Add(this.btnReturn);
@@ -304,6 +320,7 @@
             this.Controls.Add(this.btnChild);
             this.Controls.Add(this.btnAdult);
             this.Name = "Aeroport";
+            this.Text = "Aéroport";
             this.pnlDays.ResumeLayout(false);
             this.pnlDays.PerformLayout();
             this.ResumeLayout(false);
@@ -316,7 +333,6 @@
         private System.Windows.Forms.DateTimePicker dateTime;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblAeroport;
-        private System.Windows.Forms.ListBox lstboxQuantity;
         private System.Windows.Forms.Button btnValid;
         private System.Windows.Forms.Button btnGoNext;
         private System.Windows.Forms.Button btnReturn;
@@ -328,10 +344,11 @@
         private System.Windows.Forms.Label lbl2e;
         private System.Windows.Forms.Button btnChild;
         private System.Windows.Forms.Button btnAdult;
-        private System.Windows.Forms.Label lblDurability;
+        private System.Windows.Forms.Label lblValidity;
         private System.Windows.Forms.RadioButton rdbtn1;
         private System.Windows.Forms.RadioButton rdbtn3;
         private System.Windows.Forms.RadioButton rdbtn5;
         private System.Windows.Forms.Panel pnlDays;
+        private System.Windows.Forms.ComboBox coboxQuantity;
     }
 }
